@@ -46,20 +46,19 @@ print("""
 ║\033[91m                        BY CHECKING THE HOST                      \033[31m║
 ║\033[36m                             ——oO0Oo——                            \033[31m║
 ╚═══════════════════════════════════════════════════════════════════╝
-"""
+""")
 while attemps < 100:
     username = input("\033[32mEnter your username: \033[0m")
     password = input("\033[31mEnter your password: \033[0m")
 
-    if username == 'bp4' and password == 'bp4':
-        print("\033[32m⟩⟩ Hai...! Welcome to zona attack BLACKPHANTER \033[0m")
+    if username == 'tc4teen' and password == 'tc4teen':
+        print("\033[32m DEDICATED TO THE PALESTINE STRUGGLE")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
         attemps += 1
         continue
-faded_text = fade.fire(logo)
-print(faded_text)
+        
 # Validate target IP
 def validate_ip(ip: str):
     try:
@@ -97,10 +96,10 @@ def main():
         sys.exit(1)
 
     try:
-        port = int(input(" [+] Enter Starting Port Number (default 80): ").strip() or 80)
-        packet_size = int(input(" [+] Enter Packet Size (default 1490 bytes): ").strip() or 1490)
-        threads = int(input(" [+] Enter Number of Threads (default 4): ").strip() or 4)
-        rate_limit = float(input(" [+] Enter Rate Limit (seconds, default 0.01): ").strip() or 0.01)
+        port = int(input(" [+] Enter Starting Port Number (80): ").strip() or 80)
+        packet_size = int(input(" [+] Enter Packet Size (1490 bytes): ").strip() or 1490)
+        threads = int(input(" [+] Enter Number of Threads (4): ").strip() or 4)
+        rate_limit = float(input(" [+] Enter Rate Limit (seconds, 0.01): ").strip() or 0.01)
     except ValueError:
         log_message("Invalid input provided. Exiting...")
         sys.exit(1)
@@ -121,7 +120,7 @@ def main():
         for thread in thread_list:
             thread.join()
     except KeyboardInterrupt:
-        log_message("Attack stopped by user.")
+        log_message("Attack complite.")
 
 if __name__ == "__main__":
     main()
