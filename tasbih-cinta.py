@@ -5,7 +5,7 @@ import os
 import sys
 import time
 import socket
-import fade
+import logging
 import random
 import threading
 from datetime import datetime
@@ -32,13 +32,7 @@ print("Loading.......")
 attemps = 0
 os.system("clear")
 print("""
-            ±± ±±                    ±± ±±  ±±
-          ±±   ±± ±±    ±±   ±±    ±±       ±±  ±±  ±±     ±±
-         ±±  ±±     ±±  ±± ±±  ±±  ±±       ±±  ±±   ±±   ±±
-         ±±  ±±     ±±  ±±     ±±  ±± ±±    ±±  ±±    ±± ±±
-         ±±  ±±     ±±  ±±     ±±  ±±       ±±  ±±   ±±   ±±
-          ±±   ±± ±±    ±±     ±±  ±±       ±±  ±±  ±±     ±±
-            ±± ±±                  ±±       ±±
+            
 ╔═══════════════════════════════════════════════════════════════════╗
 ║\033[34m               TOOLS TO DETECT AND DROPPING WEBSITES_             \033[31m║
 ║\033[32m                          DESIGN BY: KF'24                        \033[31m║
