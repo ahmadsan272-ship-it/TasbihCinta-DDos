@@ -9,6 +9,26 @@ import socket
 import logging
 
 def warna():
+
+black='\e[0;30m'
+blue='\e[0;34m'
+green='\e[0;32m'
+cyan='\e[0;36m'
+red='\e[0;31m'
+purple='\e[0;35m'
+brown='\e[0;33m'
+lightgray='\e[0;37m'
+darkgray='\e[1;30m'
+lightblue='\e[1;34m'
+lightgreen='\e[1;32m'
+lightcyan='\e[1;36m'
+lightred='\e[1;31m'
+lightpurple='\e[1;35m'
+yellow='\e[1;33m'
+white='\e[1;37m'
+nc='\e[0m'
+
+
 \033[2mgray = abu-abu
 \033[31mred = merah
 \033[32mgreen = hijau
@@ -52,8 +72,8 @@ warnacerah()
 
             
 os.system("clear")
-os.system("https://github.com/ahmadsan272-ship-it/TasbihCinta-DDos")
-print("\033[37mDESICATED FOR FILISTINE\033[0m")
+os.system("\033[101m \033[37mhttps://github.com/ahmadsan272-ship-it/TasbihCinta-DDos\033[0m")
+print("\033[104m \033[37mDESICATED FOR FILISTINE\033[0m")
 time.sleep(5)
 print("Loading.......")
 
