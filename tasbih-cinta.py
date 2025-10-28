@@ -6,6 +6,7 @@ import sys
 import time
 import random
 import socket
+import logging
 
 os.system("clear")
 os.system("https://github.com/ahmadsan272-ship-it/TasbihCinta-DDos")
@@ -16,6 +17,7 @@ print("Loading.......")
 attemps = 0
 os.system("clear")
 print("")
+
 
 
 
