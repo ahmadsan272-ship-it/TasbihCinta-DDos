@@ -56,7 +56,7 @@ while attemps < 100:
         continue
 
 if len(sys.argv) < 4:
-    print "ddos4"
+    print("")
     sys.exit("Usage: python "+sys.argv[0]+" <ip> <port> <size>")
 
 ip = sys.argv[1]
