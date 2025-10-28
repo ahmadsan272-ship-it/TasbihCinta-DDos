@@ -24,7 +24,7 @@ def log_message(message: str):
     print(message)
 
 os.system("clear")
-os.system("https://github.com/Kodekeras24")
+os.system("https://github.com/ahmadsan272-ship-it/TasbihCinta")
 print("\033[37mWelcome to Zona Blackphanter\033[0m")
 time.sleep(5)
 print("Loading.......")
