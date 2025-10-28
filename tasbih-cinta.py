@@ -79,8 +79,8 @@ print("Loading.......")
 
 attemps = 0
 os.system("clear")
-print("")
-
+print("""
+033[32m
 
 
 
