@@ -27,8 +27,6 @@ def warna():
     CYAN    = "\033[36m"
     WHITE   = "\033[37m"
 
-\033[2mgray = abu-abu
-
             
 os.system("clear")
 os.system("\033[101m \033[37mhttps://github.com/ahmadsan272-ship-it/TasbihCinta-DDos\033[0m")
