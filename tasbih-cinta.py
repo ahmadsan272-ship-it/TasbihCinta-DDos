@@ -106,6 +106,7 @@ class udp(threading.Thread):
         threading.Thread.__init__(self)
     def run(self):
         for i in range(self.packets):
+        print('Jebanje majke: %s:%s for %s seconds'%(ip,port,dur or 'infinite'))
             try:
                 bytes = random._urandom(self.size)
                 if self.port == 0:
