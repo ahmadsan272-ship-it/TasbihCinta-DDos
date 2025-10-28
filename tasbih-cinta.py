@@ -7,6 +7,17 @@ import time
 import random
 import socket
 
+os.system("clear")
+os.system("https://github.com/Kodekeras24")
+print("\033[37mDESICATED FOR FILISTINE\033[0m")
+time.sleep(5)
+print("Loading.......")
+
+attemps = 0
+os.system("clear")
+print("")
+
+
 if len(sys.argv) < 4:
     print "ddos4"
     sys.exit("Usage: python "+sys.argv[0]+" <ip> <port> <size>")
