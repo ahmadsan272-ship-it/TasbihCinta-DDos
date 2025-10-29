@@ -93,8 +93,8 @@ print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}
 print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
 print(f"\033[37m╚{'═' * 66}╝")
 while attemps < 100:
-    username = input("\033[100m \033[32mEnter your username: \033[33m \033[0m")
-    password = input("\033[100m \033[31mEnter your password: \033[33m \033[0m")
+    username = input("\033[100m \033[32m••> Enter your username: \033[33m \033[0m")
+    password = input("\033[100m \033[31m••> Enter your password: \033[33m \033[0m")
 
     if username == 'tc4teen' and password == 'tc4teen':
         print("\033[104m \033[32m DEDICATED TO THE PALESTINE STRUGGLE \033[0m")
@@ -133,8 +133,8 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
         sock.close()
 
 os.system("clear")
-os.system("\033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta")
-print("\033[33m-----Welcome to zona TASBIH CINTA")
+os.system("\033[100m \033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta \033[0m")
+print("\033[33m.  Welcome to zona TASBIH CINTA")
 time.sleep(5)
 print("Loading.......")
 
