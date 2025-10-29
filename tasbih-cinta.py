@@ -159,7 +159,7 @@ print(f"\033[37m╔{'═' * 66}╗")
 print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
 print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
 print(f"\033[37m╚{'═' * 66}╝")
-    ip = input(" [+] Enter Target IP: ").strip()
+ip = input(" [+] Enter Target IP: ").strip()
     if not validate_ip(ip):
         log_message("Invalid IP address provided. Exiting...")
         sys.exit(1)
