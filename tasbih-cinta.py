@@ -70,12 +70,6 @@ def log_message(message: str):
         log_file.write(f"[{timestamp}] {message}\n")
     print(message)
 
-os.system("clear")
-os.system("\033[104m \033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta\033[0m")
-print("\033[100m \033[31mWelcome to zona TASBIH CINTA\033[0m")
-time.sleep(5)
-print("Loading.......")
-
 attemps = 0
 os.system("clear")
 print("""
@@ -136,6 +130,12 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
         log_message(f"Error in thread {threading.get_ident()}: {e}")
     finally:
         sock.close()
+
+os.system("clear")
+os.system("\033[104m \033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta\033[0m")
+print("\033[100m \033[31m' ' * 7}Welcome to zona TASBIH CINTA\033[0m")
+time.sleep(5)
+print("Loading.......")
 
 # Main script execution
 def main():
