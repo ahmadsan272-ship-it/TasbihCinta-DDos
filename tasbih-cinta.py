@@ -4,7 +4,6 @@ import os
 import sys
 import time
 import socket
-import fade
 import logging
 import random
 import threading
@@ -95,8 +94,6 @@ print("""
 \033[31m║\033[100m                            \033[34m█║        █║   █ █║    █║  ██████║\033[100m    \033[31m║
 \033[31m╚═════════════════════════════\033[34m████║\033[31m════\033[34m█║\033[31m════\033[34m██║\033[31m════\033[34m█║\033[31m══\033[34m█╔═══█║\033[31m════╝\033[0m")
                                \033[34m═══╝    ═╝    ══╝    ═╝  ═╝   ═╝""")
-faded_text = fade.fire(logo)
-print(faded_text)
 print(f"\033[37m╔{'═' * 66}╗")
 print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}\033[0m \033[37m║")
 print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
@@ -143,7 +140,7 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
 # Main script execution
 def main():
     os.system("clear")
-    print(logo)
+    print("")
     ip = input(" [+] Enter Target IP: ").strip()
     if not validate_ip(ip):
         log_message("Invalid IP address provided. Exiting...")
@@ -159,7 +156,7 @@ def main():
         sys.exit(1)
 
     os.system("clear")
-    print(logo)
+    print("")
     log_message(f"Starting attack on {ip}:{port} with {threads} threads.")
     print(" [+] Press Ctrl+C to stop the attack.")
 
