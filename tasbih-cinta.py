@@ -134,7 +134,7 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
 
 os.system("clear")
 os.system("\033[100m \033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta \033[0m")
-print("\033[33m.  Welcome to zona TASBIH CINTA")
+print("\033[33m.  Welcome to zona TASBIH CINTA \033[0m")
 time.sleep(5)
 print("Loading.......")
 
