@@ -133,8 +133,8 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
         sock.close()
 
 os.system("clear")
-os.system("\033[104m \033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta\033[0m")
-print("\033[103m     \033[33mWelcome to zona TASBIH CINTA\033[0m")
+os.system("\033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta")
+print("\033["\033[33m-----Welcome to zona TASBIH CINTA")
 time.sleep(5)
 print("Loading.......")
 
