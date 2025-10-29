@@ -99,8 +99,8 @@ print(f"\033[37m║\033[0m \033[41m{' ' * 20} SCRIPT ADMIN BLACK ARMY {' ' * 19}
 print(f"\033[37m║\033[0m \033[41m  Designt By: KunFay'99{' ' * 41}\033[0m \033[37m║")
 print(f"\033[37m╚{'═' * 66}╝")
 while attemps < 100:
-    username = input("\033[32mEnter your username: \033[0m")
-    password = input("\033[31mEnter your password: \033[0m")
+    username = input("\033[100m \033[32mEnter your username: \033[33m \033[0m")
+    password = input("\033[100m \033[31mEnter your password: \033[33m \033[0m")
 
     if username == 'tc4teen' and password == 'tc4teen':
         print("\033[32m DEDICATED TO THE PALESTINE STRUGGLE")
