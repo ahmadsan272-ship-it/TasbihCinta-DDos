@@ -71,8 +71,8 @@ def log_message(message: str):
     print(message)
 
 os.system("clear")
-os.system("https://github.com/ahmadsan272-ship-it/TasbihCinta")
-print("\033[37mWelcome to Zona Blackphanter\033[0m")
+os.system("\033[104m \033[33mhttps://github.com/ahmadsan272-ship-it/TasbihCinta\033[0m")
+print("\033[100m \033[31mWelcome to zona TASBIH CINTA\033[0m")
 time.sleep(5)
 print("Loading.......")
 
@@ -140,7 +140,7 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
 # Main script execution
 def main():
     os.system("clear")
-    print(logo)
+    print("")
     ip = input(" [+] Enter Target IP: ").strip()
     if not validate_ip(ip):
         log_message("Invalid IP address provided. Exiting...")
